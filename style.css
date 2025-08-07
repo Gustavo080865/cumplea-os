@@ -1,0 +1,65 @@
+body {
+  font-family: "Georgia", serif;
+  background: linear-gradient(120deg, #fdeff9, #ec38bc, #7303c0);
+  background-size: 400% 400%;
+  animation: fondo 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes fondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.libro {
+  width: 90%;
+  max-width: 700px;
+  background: #ffffffd8;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  animation: aparecer 1s ease-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pagina {
+  min-height: 400px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #4a004e;
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+.controles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #fddde6;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #4a004e;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffc9d9;
+  transform: scale(1.05);
+}
