@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tu cumpleaños</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="libro animar">
+    <div id="pagina" class="pagina"></div>
+    <div class="controles">
+      <button onclick="anteriorPagina()">⟵</button>
+      <button onclick="siguientePagina()">⟶</button>
+    </div>
+  </div>
+
+  <audio id="musicaFondo" autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
